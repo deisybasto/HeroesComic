@@ -1,6 +1,7 @@
 # Spa
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.5.
+This project is an exercise about heroes like a comic web page
 
 ## Development server
 
