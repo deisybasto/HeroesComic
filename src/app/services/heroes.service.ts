@@ -64,12 +64,13 @@ export class HeroesService {
     getHeroes() {
         return this.heroes;
     }
+    // tslint:disable-next-line: typedef
     getHeroe(idx: string) {
         return this.heroes[idx];
     }
 
     buscarHeroes(termino: string): Heroes[] {
-        let heroesArr: Heroes[] = [];
+        const heroesArr: Heroes[] = [];
         termino = termino.toLowerCase();
 
 
@@ -83,6 +84,7 @@ export class HeroesService {
         return heroesArr;
     }
 
+    // tslint:disable-next-line: typedef
     findIndexHero(name: string) {
         name = name[0].toUpperCase() + name.slice(1);
         const index = this.heroes.findIndex(x => x.nombre === name);
@@ -93,11 +95,9 @@ export class HeroesService {
 }
 
 export interface Heroes {
-
     nombre: string;
     bio: string;
     img: string;
     aparicion: string;
     casa: string;
 };
-
